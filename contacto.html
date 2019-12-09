@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+<body>
+<!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href=""><img src="../imagenes/logo papeleria 2.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="localizacion.html">Donde estamos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Introduzca su busqueda..." aria-label="">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-5">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nombre *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor introduzca su nombre " required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Apellidos *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Por favor introduzca sus apellidos " required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor introduzca su email " required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Motivo de su consulta *</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request quotation">Pedidos</option>
+                                        <option value="Request order status">Incidencias</option>
+                                        <option value="Request copy of an invoice">Informacion</option>
+                                        <option value="Other">Otro</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Mensaje *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Contenido del mensaje " rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Enviar mensaje">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> Estos campos son obligatorios. 
+                            </div>
+                        </div>
+                    </div>
+                
+                </form> 
+            </div>
+        </div>
+    </div>
+
+<!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="../imagenes/logo papeleria 2.png" alt="Escudo">
+                    <hr class="light">
+                    <h4>Papeleria San Fernando</h4>
+                    <p></p>
+                    <p>Lunes a Viernes: 9:00-14:00, 17:00-21:00</p>
+                    <p>Sabado: 10:00-14:00</p> 
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>Contacto</h4>
+                    <hr class="light"> 
+                    
+                    <p>Teléfono: 927 22 20 17</p> 
+                    <p>Email: papeleriasanfernando@gmail.com</p> 
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>Realizado por</h4>
+                    <hr class="light">
+                    <p>Grupo 1 Ingenieria del Software</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light">
+                    <h5>&copy; Todos los derechos reservados. </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
